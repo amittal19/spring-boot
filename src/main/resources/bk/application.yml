@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Boot Application
+  sleuth:
+    propagation-keys: X-B3-UUID
+    baggage-keys: X-B3-UUID
+    log:
+      slf4j:
+        whitelisted-mdc-keys: X-B3-UUID
+        
+    
+    
